@@ -21,7 +21,18 @@ pipeline {
                 }
             }
         }
-		//Code ends for stage Unit Test
+	//Code starts for stage Compile
+		stage('Compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+		//Code ends for stage Compile
+		
+		
+		//Code starts for stage Code Analysis
+	
+	//Code ends for stage Unit Test
 		
 		
 		//Code starts for stage Code Coverage
